@@ -7,13 +7,12 @@ $(document).ready(function () {
 
     //Hacemos la llamada al documento 
     $.ajax({
-        url: 'https://newsapi.org/v2/everything?q=(inmobiliaria||alquileres)&language=es&pageSize=5&sortBy=publishedAt&apiKey=9bcb56f5472d4bbf818a731abf22d8dc',
+        url: 'https://gnews.io/api/v4/search?q=inmobiliaria&lang=es&country=es&max=10&apikey=3b43d422bb78918b23192a8dcd2924b1',
         method: 'GET',
         success: function (data) {  //Una vez la "conexión sea correcta"<
                 data.articles.forEach(noticia => {
                     if(cuenta <= 5){
                     const div = $('<div id="tarjetas" class="border20" ></div>'); //añadimos un nuevo div dentro del contenedor 
-
                     //cambiamos el formato de la fecha antes de añadirlo 
                     var fecha = new Date(`${noticia.publishedAt}`).toLocaleDateString();
                     
