@@ -19,7 +19,7 @@ $(document).ready(function () {
                     //escribimos el codigo que queremos insertar en el nuevo div
                     const nuevoCod = ` 
                         <div class="tamImg">
-                        <img src="${noticia.urlToImage}" alt="Foto noticia" class="border20" onerror="this.onerror=null; this.src='../imagenes/noticias.png'; "> 
+                        <img src="${noticia.image}" alt="Foto noticia" class="border20" onerror="this.onerror=null; this.src='../imagenes/noticias.png'; "> 
                         </div> 
                         <div>    
                         <h3>${noticia.title}</h3>
