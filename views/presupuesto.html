@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto_Nomadix</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description"
+        content="¡Obtén un presupuesto rápido y personalizado para tu mudanza con Nomadix. Servicios de mudanza seguros, eficientes y a precios competitivos. ¡Solicita tu presupuesto online sin compromiso!">
+    <meta name="keywords" content="mudanzas nomadix, presupuesto mudanzas, mudanzas contacto">
+</head>
+<body>
+    <header> <!--Cabecera-->
+        <div class="head">
+            <div class="before_nav">
+                <div class="box_texto">
+                    <p>Contacta con Mudanzas Nomadix</p>
+                    <div class="img_tel"><img class="wh_img" src="../imagenes/b56dfabb-c759-4c91-bb49-9335d37e29b1.png"
+                            alt="contacto_icono" width="40" height="39"></div>
+                    <p> 697 435 675 </p>
+                </div>
+            </div>
+            <div class="menu_principal">
+                <div class="cont_imgs">
+                    <img class="camion" src="../imagenes/camion.png" alt="camion" width="150" height="81">
+                    <img class="logo" src="../imagenes/logo1.png" alt="logo" width="250" height="75">
+                </div>
+                <nav class="nav"> <!--Menú de navegación-->
+                    <ul class="lista_nav">
+                        <li class="menu">
+                            <a href="../index.html" class="iconos_menu"><img class="wh_img"
+                                    src="../imagenes/Home-Silhouette-PNG-Image.png" alt="icono_home" width="40"
+                                    height="40"></a>
+                            <a class="enlace" href="../index.html">Home</a>
+                        </li>
+                        <li class="menu">
+                            <a href="Galeria.html" class="iconos_menu"><img class="wh_img" src="../imagenes/galeria.png"
+                                    alt="icono_galería" width="40" height="40"></a>
+                            <a class="enlace" href="Galeria.html">Galería</a>
+                        </li>
+                        <li class="menu">
+                            <a href="presupuesto.html" class="iconos_menu"><img class="wh_img"
+                                    src="../imagenes/presupuesto(2).png" alt="icono_presupuesto" width="40"
+                                    height="40"></a>
+                            <a class="indicador_pag" href="presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="menu">
+                            <a href="contacto.html" class="iconos_menu"><img class="wh_img"
+                                    src="../imagenes/b56dfabb-c759-4c91-bb49-9335d37e29b1.png" alt="icono_contacto"
+                                    width="40" height="39"></a>
+                            <a class="enlace" href="contacto.html">Contacto</a>
+
+                        </li>
+                    </ul>
+                    <button class="menu-icon" id="menu-icon" aria-label="Abrir menú">
+                        &#9776; <!-- Símbolo de tres puntitos -->
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main> <!--Cuerpo de la página web-->
+        <section><!--Imagen de Fondo-->
+            <div class="fondo_pres"></div>
+            <div class="txt_fondo txt_centro">
+                <h2 class="tit">Tu Mudanza, Nuestro Compromiso</h2>
+                <hr>
+                <p>Confía en Nomadix para hacer de tu mudanza un proceso rápido, seguro y sin estrés.<br> ¡Rellena el
+                    formulario y deja el resto en nuestras manos!
+                </p>
+            </div>
+        </section>
+        <section> <!--PRESUPUESTO-->
+            <h2 class="tit">¡Solicita tu Presupuesto!</h2>
+            <div id="form_pres">
+                <form id="formulario" name="formulario" method="post" >
+                    <h3>Datos de Contacto</h3>
+                    <div >
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input class="casilla" id="nombre" type="text" name="nombre" placeholder="Nombre">
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellidos:</label><br>
+                        <input class="casilla" id="apellido" type="text" name="apellidos" placeholder="Apellidos">
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="tel">Teléfono:</label><br>
+                        <input class="casilla" id="tel" type="tel" name="tel" placeholder="Teléfono">
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input class="casilla" id="correo" type="email" name="correo" placeholder="Correo">
+                        <small>Error mensaje</small>
+                    </div>               
+                    <h3>Detalles de la Mudanza</h3>
+                    <div>
+                        <label for="fecha">Fecha:</label><br>
+                        <input id="fecha" class="casilla" type="date" name="fecha" ><!--al ser de tipo date no es necesario un pattern. Lo valida por sí solo. -->
+                        <small>Error Mensaje</small>
+                    </div>
+                    <div>
+                        <p>Tipo de vivienda origen:</p>
+                        <input class="radio" type="radio" name="origen" value="cajasMed"><span>Casa</span>
+                        <input class="radio apartamento" type="radio" name="origen" value="apartamento"><span>Apartamento</span><!--Si ckecked apartamento se desglosa la planta y el ascensor si no , no-->
+                        <input class="radio" type="radio" name="origen" value="oficina"><span>Oficina</span>
+                        <input class="radio" type="radio" name="origen" value="local"><span>Local</span>
+                        <div id ="ascensor"  class="oculto"> 
+                            <p>Ascensor:</p>
+                            <input class="radio" type="radio" name="ascensor" value="si"><span>Si</span>
+                            <input class="radio" type="radio" name="ascensor" value="no"><span>No</span>
+                            
+                        </div>
+                        <div id="planta"  class="oculto"> 
+                            <label for="planta1">Planta</label>
+                            <input id="planta1" type="number" name="planta" min="-3">
+                        </div>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="dirOrg">Direción completa de origen:</label><br>
+                        <input class="casilla" id="dirOrg" type="text" name="dirOrg" placeholder="Dirección origen" ><!--al ser de tipo date no es necesario un pattern. Lo valida por sí solo. -->
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <p>Tipo de vivienda destino:</p>
+                        <input class="radio" type="radio" name="destino" value="casa"><span>Casa</span>
+                        <input class="radio apartamento" type="radio" name="destino" value="apartamento2"><span>Apartamento</span>
+                        <input class="radio" type="radio" name="destino" value="oficina"><span>Oficina</span>
+                        <input class="radio" type="radio" name="destino" value="local"><span>Local</span>
+                        <div id ="ascensor2" class="oculto"> 
+                            <p>Ascensor:</p>
+                            <input class="radio" type="radio" name="ascensor2" value="si"><span>Si</span>
+                            <input class="radio" type="radio" name="ascensor2" value="no"><span>No</span>
+                            
+                        </div>
+                        <div id="planta2"  class="oculto"> 
+                            <label for="plantaaa2">Planta</label>
+                            <input id="plantaaa2" type="number" name="planta2" min="-3">
+                        </div>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <label for="dirDes">Direción completa de destino:</label><br>
+                        <input class="casilla" id="dirDes" type="text" name="dirDes" placeholder="Dirección destino"><!--al ser de tipo date no es necesario un pattern. Lo valida por sí solo. -->
+                        <small>Error mensaje</small>
+                    </div>
+
+                    <div>
+                        <label for="km">Distancia (km):</label><br>
+                        <input id="km" class="casilla" type="number" name="distancia" placeholder="km entre origen y destino" ><!--al ser de tipo date no es necesario un pattern. Lo valida por sí solo. -->
+                        <small>Error mensaje</small>
+                    </div>
+                    <h3>Inventario de Bienes a Trasladar:</h3>
+                    <div>
+                        <button type="button" class="botonElectro botonMas" name="botonE">&#43;</button>
+                        <button type="button" class="oculto botonMenos" name="bElectro">&#45;</button>
+                        <span>Listado de electrodomésticos principales:</span><br>
+                        <div id="electrodomesticos"></div>
+                    </div>
+                    <div>
+                        <button type="button" class="botonElectro botonMas" name="buttonMasMuebles">&#43;</button>
+                        <button type="button" class="oculto botonMenos" name="buttonMenosMuebles">&#45;</button>
+                        <span>Listado de Muebles principales</span><br>
+                        <div id="divMuebles"></div>
+                    </div>
+                    <div>
+                        <label for="cajasG">Número de cajas grandes:</label>
+                        <input id="cajasG" type="number" name="cajasGrand" placeholder=" 60 x 40 x 40 cm" min="0">
+                    </div>
+                    <div>
+                        <label for="cajasM">Número de cajas Medianas:</label>
+                        <input id="cajasM" type="number" name="cajasMed" placeholder=" 45 x 35 x 30 cm" min="0">
+                    </div>
+                    <div>
+                        <label for="cajasP">Número de cajas Pequeñas:</label>
+                        <input id="cajasP" type="number" name="cajasPeq" placeholder=" 35 x 25 x 25 cm" min="0">
+                    </div>
+                    <div>
+                        <input class="checkbox" type="checkbox" name="artEspeciales" value="artEspeciales" id="artEspeciales"> 
+                        <label for="artEspeciales">Artículos especiales</label>
+                    </div>
+                    <h3>Servicios Adicionales Requeridos:</h3>
+                    <div>
+                        <p>Empaque y desempaque:</p>
+                        <input class="radio" type="radio" name="empaque" value="si"><span>Sí</span>
+                        <input class="radio" type="radio" name="empaque" value="no"><span>No</span>
+                        <small>Error mensaje</small>
+                    </div>
+                    <div>
+                        <p>Desmontaje y montaje de muebles:</p>
+                        <input class="radio" type="radio" name="desmontaje" value="si"><span>Sí</span>
+                        <input class="radio" type="radio" name="desmontaje" value="no"><span>No</span>
+                        <small>Error mensaje</small>
+                    </div>
+
+                    <h3>Observaciones o Requerimientos Especiales:</h3>
+                    <textarea cols="50" rows="4" name="observaciones">Observaciones</textarea>
+                    <div>
+                        <input class="checkbox" id="politica" type="checkbox" name="politica" value="check"><a
+                            href="#politica_priv" class="enlace_priv" id="politicaPrivacidad">Política de Privacidad</a>
+                        <small>Error Mensaje</small>
+                    </div>
+                    <div class="politica_priv oculto" id="politica_priv"></div>
+                    <input  type="submit" id='btnEnvio' name="envio" value="enviar">
+                    <div id="presupuestoTotal"></div>
+                </form>
+            </div>
+        </section>
+        <section><!---->
+            <div class="seccion7 txt_centro">
+                <div class="fondo_info"></div>
+                <div class="contacto border20"><!--Contactar-->
+                    <h2>¿Necesitas Ayuda?</h2>
+                    <p>Llámanos gratis de lunes a viernes de<br> 9h a 20h.<br>
+                       +34 900 546 500 </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <!--Pie de página-->
+        <div class="ciudades txt_centro">
+            <div>
+                <h5>Mudanzas Nomadix</h5>
+                <a href="https://www.google.com/maps" class="direccionn">Avinguda Real de Madrid, 102, Pobles del
+                    Sud,Valencia</a>
+                <p>Mudanzas Valencia, Servios de mudanzas, Emabalaje, Transporte, Seguridad, Trabajos
+                    internacionales, Trabajos nacionales, Servicios personalizados</p>
+                <h5>OFRECEMOS SERVICIOS DE MUDANZAS EN ESPAÑA</h5>
+                <p>A coruña &#124; Albacete &#124; Alicante &#124; Almería &#124; Ávila &#124; Badajoz &#124; Barcelona
+                    &#124; Bilbao &#124; Burgos &#124; Cáceres &#124; Cádiz &#124;
+                    Castellón de la Plana &#124; Ceuta &#124; Ciudad Real &#124; Córdoba &#124; Cuenca &#124;
+                    Donostia-San Sebastián &#124; Girona &#124; Granada &#124; Guadalajara &#124;
+                    Huelva &#124; Huesca &#124; Jaén &#124; Jerez de la Frontera &#124; Gran Canaria &#124; León &#124;
+                    Lleida &#124; Logroño &#124; Lugo &#124; Madrid &#124; Málaga &#124;
+                    Melilla &#124; Murcia &#124; Ourense &#124; Oviedo &#124; Palma de Mollorca &#124; Pamplona &#124;
+                    Salamanca &#124; Tenerife &#124; Santander &#124; Valencia </p>
+            </div>
+        </div>
+        <div class="redes_sociales">
+            <div>
+                <ul class="documentacion"> <!--Documentación legal de la empresa-->
+                    <li><a href="documentacion.html#aviso_legal">Aviso Legal</a></li>
+                    <li><a href="documentacion.html#cond.generales">Condiciones generales de contratación</a></li>
+                    <li><a href="documentacion.html#pol.priv">Política de privacidad</a></li>
+                    <li><a href="documentacion.html#pol.cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="iconos_redes"> <!--Enlaces que dirigen a las redes sociales de la empresa-->
+                    <li><a href="https://es-es.facebook.com/"><img class="icon_redes" src="../imagenes/facebook.png"
+                                alt="facebook" width="40" height="40"></a></li>
+                    <li><a href="https://www.instagram.com/"><img class="icon_redes" src="../imagenes/instagram.png"
+                                alt="Instagram" width="40" height="40" ></a></li>
+                    <li><a href="https://es.linkedin.com/"><img class="icon_redes" src="../imagenes/linkedin.png"
+                                alt="Linkedin" width="40" height="40"></a></li>
+                    <li><a href="https://www.youtube.com/"><img class="icon_redes" src="../imagenes/youtube.png"
+                                alt="Youtube" width="40" height="40"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!--JavaScript controlador menú-->
+    <script src="../js/script.js" defer></script>
+    <!--JavaScript validación del formulario-->
+    <script type="module" src="../js/validacion.js"></script> 
+</body>
+</html>
