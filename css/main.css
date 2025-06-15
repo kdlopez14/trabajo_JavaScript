@@ -922,7 +922,6 @@ small{
       width: 100%;
       font-size: 15px;
    }
-
    #cont-noticias{
       width: 70%;
       display: flex;
@@ -1004,7 +1003,6 @@ small{
    .txt_izq{
       padding: 20px;
    }
-  
    .div_preg div p, footer{
       font-size: 18px;
    }
@@ -1058,8 +1056,6 @@ small{
    .gal_sec3 ul li button{
       font-size: 18px;
    }
-  
-
   /*Presupuesto*/
   #form_pres{
    width: 90%;

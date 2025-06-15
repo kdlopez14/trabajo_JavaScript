@@ -102,7 +102,7 @@ function validarDistancia(){
         if(distancia.value == null || distancia.value === ""){
             val.distancia = false;
             setError(distancia, "* Este campo no puede estar vacío")
-        }else if (Number(distancia.value) <= 10){
+        }else if (Number(distancia.value) < 10){
             val.distancia = false;
             setError(distancia, "* El recorrido mínimo son 10km");
         }else {

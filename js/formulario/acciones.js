@@ -120,7 +120,7 @@ botones.forEach(input => {
                 menosMueble.className = 'botonElectro';
                 divMuebles.innerHTML =
                     `
-            <table id="tablaMuebles">
+        <table id="tablaMuebles">
         <tr>
             <th>
                 <input class="checkbox" type="checkbox" name="muebles" value="sofa" ><span>Sofá</span>
@@ -279,16 +279,14 @@ export function presupuesto() {
         //si nos encotramos con que alguna casilla no hay numero es = 0
         const casillaVacia = document.querySelector(`input[name=${nombreCasilla}]`);
         if (casillaVacia && casillaVacia.value === "") {
-            casillaVacia.value = 0; //si está vacía o nulla se da por hecho que es un cero 
+             //si está vacía o nulla se da por hecho que es un cero 
+             suma += 0;
         }
         const inputCantidad = parseFloat(casillaVacia.value);
-        
         if (!isNaN(inputCantidad) && inputCantidad > 0) {
             suma += inputCantidad * precios[nombreCasilla];
         }
-
     })
-
     //articulos especiales 
     const artEsp = document.querySelector(`input[name="artEspeciales"]`);
     if (artEsp.checked) {
